@@ -1,0 +1,115 @@
+.main {
+    min-height: 70vh;
+    width: 90vw;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro {
+    height: 20vh;
+    width: 100%;
+    margin-bottom: 0;
+
+}
+
+.intro h1 {
+    text-align: center;
+    width: 100%;
+    padding: .8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.intro h2 {
+    font-size: 1.1rem;
+    width: 60%;
+    text-align: left;
+    padding: 0;
+    margin: 0 auto ;
+}
+
+#roomHead{
+    margin: 0.9rem;
+}
+
+.value
+{
+    font-weight: normal;
+    margin: 0.4rem;
+}
+
+.navBar {
+    padding: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-left: 30px;
+    width: 80vw;
+    height: 10vh;
+    display: flex;
+
+}
+
+.navBar ul {
+    list-style: none;
+}
+
+.navBar ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.btn {
+    padding: 0px;
+}
+.btn button {
+    background:red;
+    color: white;
+    border-radius: 0.4rem;
+    padding: 0.7rem 0.9rem;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btn button:hover{
+    font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+
+
+    .main {
+
+        align-items: center;
+    }
+
+    .navBar{
+        margin: 5vh auto;
+        height: 30vh;
+        width: 50vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navBar ul {
+        padding: 0;
+    }
+
+    .navBar ul li {
+        margin: 0;
+        padding: 0.5rem;
+    }
+
+    .navBar ul li a {
+        font-size: 1.3rem;
+    }
+
+}
+
+.navBar ul li a:hover {
+    font-weight: bold;
+    font-size: 1.3rem;
+}

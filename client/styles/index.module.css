@@ -1,0 +1,106 @@
+.mainContainer {
+    margin: 0;
+    padding: 0;
+    width: 90vw;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    /* background: #000; */
+
+}
+
+
+.header {
+
+    /* background: red; */
+    width: 70vw;
+    height: 20vh;
+}
+
+.header h1 {
+    background: white;
+    text-align: center;
+}
+
+.header h2 {
+    text-align: center;
+    /* background: #000; */
+}
+
+.login {
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-top: 52px;
+    height: 60%;
+    width: 90%;
+    margin: auto;
+    /* margin-left: 0; */
+
+
+}
+
+.login form {
+    /* background: yellow; */
+    margin-top: 0;
+    margin-left: 10px;
+
+    width: 100%;
+    height: 100%;
+    /* padding: 10px; */
+
+}
+
+
+.login form label h3 {
+    
+    margin: 1rem 0;
+    display: block;
+
+    width: max-content;
+    
+    text-align:left;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.login form input {
+    background: none;
+    width: 60%;
+    height: 2%;
+    display: block;
+    border: 1px solid;
+    outline: none;
+
+}
+
+.login form button {
+
+
+
+    border: none;
+
+    padding: 8px 12px;
+    font-size: 1.4rem;
+    color: white;
+    background: red;
+    width: 6rem;
+    height: 3rem;
+    font-weight:bold;
+    cursor: pointer;
+    margin: 1rem 0px;
+
+
+
+}
+
+.login form a 
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
