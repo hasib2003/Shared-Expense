@@ -24,7 +24,7 @@ const roomates = ({ roomId }) => {
     () => {
       if (!islogin) {
         axios.get(
-          "/api/room/enter"
+          `${process.env.NEXT_PUBLIC_SEVER}/api/room/enter`
         ).then(
           (res) => {
             if (res.data["status"] === "allowed") {
@@ -34,7 +34,7 @@ const roomates = ({ roomId }) => {
 
 
               axios.post(
-                "/api/user",
+                `${NEXT_PUBLIC_SEVER}/api/user`,
                 {
                   "roomId": roomId
                 }
@@ -88,7 +88,7 @@ const roomates = ({ roomId }) => {
     e.preventDefault()
     axios.post(
 
-      "/api/user/delete",
+      `${process.env.NEXT_PUBLIC_SEVER}/api/user/delete`,
 
       {
         "userId": tarId,
@@ -121,7 +121,7 @@ const roomates = ({ roomId }) => {
     e.preventDefault();
     axios.post
       (
-        "/api/user/registration",
+        `${process.env.NEXT_PUBLIC_SEVER}/api/user/registration`,
         {
           "Name": name,
           "email": email,

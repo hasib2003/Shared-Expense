@@ -29,7 +29,7 @@ const RegRoom = () => {
 
     try {
       console.log("tone")
-      const res = await axios.post("/api/room/registration", {
+      const res = await axios.post(`${process.env.NEXT_PUBLIC_SEVER}/api/room/registration`, {
         "RoomName": roomName,
         "entryKey": Entry,
         "masterKey": Master
@@ -40,7 +40,7 @@ const RegRoom = () => {
 
         const roomId = res.data["room"]["_id"].toString();
         // registering one user also 
-        const res2 = await axios.post("/api/user/registration", {
+        const res2 = await axios.post(`${process.env.NEXT_PUBLIC_SEVER}/api/user/registration`, {
           "Name": Name,
           "email": email,
           "password": password,

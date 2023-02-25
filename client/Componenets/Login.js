@@ -15,7 +15,7 @@ const Login = ({setLogin}) => {
     e.preventDefault();
 
     try{
-    const res = await axios.post("/api/room/enter",
+    const res = await axios.post(`${process.env.NEXT_PUBLIC_SEVER}/api/room/enter`,
 
       {
         "email": email,

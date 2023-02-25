@@ -15,13 +15,14 @@ export default function Home() {
   useEffect(
   ()=>
   {
-    if(islogin){
+    if(islogin)
+    {
     router.push("/home")
     }
     else
     {
       axios.get(
-        "/api/room/enter"
+        `${process.env.NEXT_PUBLIC_SEVER}/api/room/enter`
       ).then(
         (res)=>
         {
@@ -31,7 +32,7 @@ export default function Home() {
             setLogin(true);
           }
           else{
-            alert("Invalid Credientials")
+            // alert("Invalid Credientials")
           }
         }
       ).catch(

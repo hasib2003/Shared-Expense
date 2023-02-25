@@ -21,7 +21,7 @@ const home = () => {
       if (!islogin) {
         axios.get
         (
-          "/api/room/enter"
+          `${NEXT_PUBLIC_SEVER}/api/room/enter`
         ).then(
           (res) => {
             console.log("==> ", res.data)

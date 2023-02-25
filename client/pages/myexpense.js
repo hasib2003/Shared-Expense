@@ -26,7 +26,7 @@ const myexpense = ({roomId}) => {
         e.preventDefault();
 
         axios.post(
-           "/api/expense/add",
+          `${process.env.NEXT_PUBLIC_SEVER}/api/expense/add`,
            {
             "price":price,
             "description":desc,
@@ -65,7 +65,7 @@ const myexpense = ({roomId}) => {
           if(!islogin)
           {
             axios.get(
-              "/api/room/enter"
+              `${process.env.NEXT_PUBLIC_SEVER}/api/room/enter`
             ).then(
               (res)=>
               {

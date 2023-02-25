@@ -22,7 +22,7 @@ const expense = () => {
     () => {
       if (!islogin) {
         axios.get(
-          "/api/room/enter"
+          `${process.env.NEXT_PUBLIC_SEVER}/api/room/enter`
         ).then(
           (res) => {
             if (res.data["status"] === "allowed") {
@@ -33,7 +33,7 @@ const expense = () => {
 
 
               axios.post(
-                "/api/expense/room",
+                `${process.env.NEXT_PUBLIC_SEVER}/api/expense/room`,
                 {
                   "roomId": roomId
                 }
